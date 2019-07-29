@@ -1,5 +1,9 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdarg.h>
+#include <string.h>
 
 /* PROTOTYPE OF PRINTF */
 int _printf(const char *format, ...);
