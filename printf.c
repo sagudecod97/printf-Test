@@ -22,13 +22,11 @@ int length(char *str)
 
 	return- (i);
 }
-
 int _printf(const char *format, ...)
 {
 	va_list valist;
-	int i = 0, j = 0;
+	int i = 0, j = 0, num;
 	char *str;
-	char *p;
 
 	va_start(valist);
 
@@ -40,11 +38,11 @@ int _printf(const char *format, ...)
 				{
 					case 'i':
 						num = va_arg(valist, int);
-						p = ptr(va_arg(valist, int));
-						write(1, p, digit(num));
+						print_number(num);
 						j++;
+						i = i + 2;
 						break;
-					case 'c':
+					/*case 'c':
 						write(1,va_arg(valist, int),1);
 						j++;
 						break;
@@ -52,18 +50,18 @@ int _printf(const char *format, ...)
 						str = va_arg(valist, char *);
 						write(1,str,length(str);
 						j++;
-						break;
-						};
+						break;*/
+				};
 			};
 			if (format[i] == '%')
 			{
-				write(1,format[j + 1],1)
+				_putchar(format[j + 1]);
 				j++;
 			}
-			write(1,format[i], 1);
+			_putchar(format[i]);
 			i++;
 			j++;
 		};
-	write(1,'\n',1);
+	write(1,"\n",1);
 	va_end(valist);
 }
