@@ -1,33 +1,12 @@
 #include "holberton.h"
 
-int digit(int n)
-{
-	if ((n /10) < 1)
-	{
-		return (1);
-	};
-
-	result = 1 + digit(n / 10);
-
-	return (result);
-}
-
-int length(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		i++;
-
-	return- (i);
-}
 int _printf(const char *format, ...)
 {
 	va_list valist;
 	int i = 0, j = 0, num;
 	char *str;
 
-	va_start(valist);
+	va_start(valist, format);
 
 	while (format[i] != '\0')
 		{
@@ -63,4 +42,13 @@ int _printf(const char *format, ...)
 		};
 	write(1,"\n",1);
 	va_end(valist);
+}
+
+int main (void)
+{
+	int numero = 4877555;
+
+	_printf("Hola msfef %i dsafsdfasaf fsdf", numero);
+
+	return (0);
 }
