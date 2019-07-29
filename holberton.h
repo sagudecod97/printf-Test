@@ -6,6 +6,7 @@ int _printf(const char *format, ...);
 
 /* OTHER */
 int _strlen(char*);
-char *ptr(char *a);
+void print_number(int n);
+int _putchar(char c);
 
 #endif
