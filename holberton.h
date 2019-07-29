@@ -5,5 +5,7 @@
 int _printf(const char *format, ...);
 
 /* OTHER */
+int _strlen(char*);
+char *ptr(char *a);
 
 #endif
