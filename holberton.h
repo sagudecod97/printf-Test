@@ -6,5 +6,7 @@
 int _printf(const char *format, ...);
 
 /* OTHER */
+void _integer(int);
+int _strlen(char*);
 
 #endif
