@@ -9,8 +9,10 @@
 int _printf(const char *format, ...);
 
 /* OTHER */
-int _strlen(char*);
+int length(char *str);
 void print_number(int n);
 int _putchar(char c);
+int digit(int n);
+
 
 #endif

@@ -1,25 +1,6 @@
 #include "holberton.h"
 
 /**
- * _strlen - Count the maximum number of a array
- * @s: Input Array
- *
- * Return: counter
- */
-
-int _strlen(char *s)
-{
-	int cont;
-
-	cont = 0;
-	while (s[cont])
-	{
-		cont++;
-	}
-	return (cont);
-}
-
-/**
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *
@@ -54,4 +35,40 @@ void print_number(int n)
 		print_number(i / 10);
 	}
 	_putchar(i % 10 + '0');
+}
+
+/**
+ * digit - get the number to digit
+ * @n: the digit
+ *
+ * Return: the numbers of digits
+ */
+
+int digit(int n)
+{
+	if ((n /10) < 1)
+	{
+		return (1);
+	};
+
+	result = 1 + digit(n / 10);
+
+	return (result);
+}
+
+/**
+ * length - print the length of the string
+ * @str: string
+ *
+ * Return: length of char
+ */
+
+int length(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+		i++;
+
+	return- (i);
 }
