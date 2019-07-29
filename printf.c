@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <srtarg.h>
 
 int digit(int n)
 {
