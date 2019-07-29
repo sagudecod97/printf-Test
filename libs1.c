@@ -46,6 +46,8 @@ void print_number(int n)
 
 int digit(int n)
 {
+	int result;
+
 	if ((n /10) < 1)
 	{
 		return (1);
