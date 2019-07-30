@@ -4,7 +4,7 @@ int _printf(const char *format, ...)
 {
 	va_list valist;
 	int i = 0, num;
-	char *str, c;
+	char * str, c;
 
 	va_start(valist, format);
 
@@ -49,22 +49,6 @@ int _printf(const char *format, ...)
 				i++;
 			};
 		};
-	/*write(1,"\n",1);*/
 	va_end(valist);
-	return (0);
-}
-
-int main (void)
-{
-	int numero = 4877555;
-	char c = 'c';
-	char * str = "Hola Mundo";
-
-	_printf("Hola msfef %i dsafsdfasaf fsdf %i\n", numero, 57878);
-	_printf("This is a char: %c\n", c);
-	_printf("This a fkn string: %s\n", str);
-	_printf("A number: %i, a char: %c and a string: %s  %%  %%f%", numero, c, str);
-	_printf("A simple string\n");
-	_printf("Received a d: %d\n", numero);
 	return (0);
 }
